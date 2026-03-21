@@ -26,7 +26,7 @@ jobs:
       - name: Download cn-ipv4.list
         run: |
           curl -fsSL \
-            https://gh.pry.assets.991081.xyz/https://raw.githubusercontent.com/Suyunmeng/china-operator-ip/refs/heads/ip-lists/china.txt \
+            https://raw.githubusercontent.com/Suyunmeng/china-operator-ip/refs/heads/ip-lists/china.txt \
             > cn-ipv4.list
           sort -u cn-ipv4.list -o cn-ipv4.list
           echo "cn-ipv4.list updated: $(wc -l < cn-ipv4.list) entries"
